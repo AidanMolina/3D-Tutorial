@@ -525,3 +525,4 @@ Received Import Request.
 Start importing Assets/Town using Guid(1dd30b8c49e5ad64aa97a1e483732688) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4a66ee37d4e4bb47c622df38e12f6b3') in 0.010406 seconds 
   Import took 0.014377 seconds .
 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
