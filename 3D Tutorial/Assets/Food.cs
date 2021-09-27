@@ -38,6 +38,7 @@ public class Food : MonoBehaviour
     void OnMouseDown(){
         if(_runtimeData.CurrentGameplayState == GameplayState.FreeWalk){
             StartCoroutine(_parentQuiz.GetComponent<FoodQuiz>().FoodSelected(gameObject));
+            _runtimeData.CurrentFoodMousedOver = "";
         }
     }
 }

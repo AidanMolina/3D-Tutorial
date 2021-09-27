@@ -36,5 +36,7 @@ public class FoodQuiz : MonoBehaviour
         else{
             GameEvents.InvokeDialogInitiated(_incorrectChoicedialogue);
         }
+        
+        Destroy(food);
     }
 }
