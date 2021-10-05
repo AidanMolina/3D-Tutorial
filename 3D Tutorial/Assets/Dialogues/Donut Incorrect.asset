@@ -14,5 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NPCAvatar: {fileID: 2800000, guid: 42328898b5e6957488c8cac020c90b04, type: 3}
   DialogSlides:
-  - Your choice was...
-  - INCORRECT!
+  - Your choice was... INCORRECT!

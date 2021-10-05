@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf8f82bd9d0807d4a90f31b26252ebea, type: 3}
   m_Name: FruitGuy Chat
   m_EditorClassIdentifier: 
-  NPCAvatar: {fileID: 0}
+  NPCAvatar: {fileID: 2800000, guid: 2fa3304ea0530fd4da4c586f4ea0e5df, type: 3}
   DialogSlides:
-  - 
+  - If ya ask me...
+  - Anythin' tae do wit dat apple...
+  - Is a bad ting

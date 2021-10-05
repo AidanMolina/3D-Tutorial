@@ -10,10 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bf8f82bd9d0807d4a90f31b26252ebea, type: 3}
-  m_Name: DonutLady Chat
+  m_Name: Scene2 Intro
   m_EditorClassIdentifier: 
-  NPCAvatar: {fileID: 2800000, guid: 42328898b5e6957488c8cac020c90b04, type: 3}
+  NPCAvatar: {fileID: 2800000, guid: d72718317a602d04c8c7f977bf018dbe, type: 3}
   DialogSlides:
-  - That nasty robot is terrible for trapping you here.
-  - I don't remember exactly what the right food is...
-  - But those sprinkles look poisonous.
+  - I'm surprised you made it through that section of the bazar.
+  - You fleshlings sure do love to help each other out.
+  - No matter, these ones are being paid to deceive you.
+  - Ha Ha

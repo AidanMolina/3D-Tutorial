@@ -13,11 +13,13 @@ public class FoodQuiz : MonoBehaviour
     [SerializeField] GameObject _NPC;
     [SerializeField] GameObject _correctFood;
     [SerializeField] RuntimeData _runtimeData;
+
+    public bool _done;
     
     // Start is called before the first frame update
     void Start()
     {
-        
+        _done = false;
     }
 
     // Update is called once per frame
@@ -41,6 +43,7 @@ public class FoodQuiz : MonoBehaviour
                 Player._health = 3;
             }
             Destroy(food);
+            _done = true;
         }
         else if(food == _NPC){
             GameEvents.InvokeDialogInitiated(_NPCDialogue);

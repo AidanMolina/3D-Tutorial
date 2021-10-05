@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bf8f82bd9d0807d4a90f31b26252ebea, type: 3}
-  m_Name: DonutLady Chat
+  m_Name: P Chat
   m_EditorClassIdentifier: 
-  NPCAvatar: {fileID: 2800000, guid: 42328898b5e6957488c8cac020c90b04, type: 3}
+  NPCAvatar: {fileID: 2800000, guid: cd33e49585b11f247b06e4c4ee13aefe, type: 3}
   DialogSlides:
-  - That nasty robot is terrible for trapping you here.
-  - I don't remember exactly what the right food is...
-  - But those sprinkles look poisonous.
+  - Pies, Pizzas, and Pineapples.
+  - If it starts with P, we've got them!
+  - Well, except a double P.
