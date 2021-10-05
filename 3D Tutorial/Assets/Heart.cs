@@ -21,6 +21,7 @@ public class Heart : MonoBehaviour
         else if(Player._health < 1){
             transform.Find("Heart").gameObject.SetActive(false);
             transform.Find("Game Over").gameObject.SetActive(true);
+            transform.Find("ExitButton").gameObject.SetActive(true);
         }
 
         if(Player._health >= 2){

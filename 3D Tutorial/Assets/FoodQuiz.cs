@@ -8,7 +8,9 @@ public class FoodQuiz : MonoBehaviour
     [SerializeField] Dialogue _dialogue;
     [SerializeField] Dialogue _correctChoiceDialogue;
     [SerializeField] Dialogue _incorrectChoicedialogue;
+    [SerializeField] Dialogue _NPCDialogue;
 
+    [SerializeField] GameObject _NPC;
     [SerializeField] GameObject _correctFood;
     [SerializeField] RuntimeData _runtimeData;
     
@@ -26,6 +28,7 @@ public class FoodQuiz : MonoBehaviour
 
     void OnTriggerEnter(){
         GameEvents.InvokeDialogInitiated(_dialogue);
+        Destroy(gameObject.GetComponent<BoxCollider>());
     }
 
     public IEnumerator FoodSelected(GameObject food){
@@ -37,12 +40,15 @@ public class FoodQuiz : MonoBehaviour
             if(Player._health > 3){
                 Player._health = 3;
             }
+            Destroy(food);
+        }
+        else if(food == _NPC){
+            GameEvents.InvokeDialogInitiated(_NPCDialogue);
         }
         else{
             GameEvents.InvokeDialogInitiated(_incorrectChoicedialogue);
             Player._health -= 1;
+            Destroy(food);
         }
-        
-        Destroy(food);
     }
 }

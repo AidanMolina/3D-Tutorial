@@ -25,9 +25,9 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Aim();
         if(_runtimeData.CurrentGameplayState == GameplayState.FreeWalk){
             Movement();
+            Aim();
         }
     }
 
