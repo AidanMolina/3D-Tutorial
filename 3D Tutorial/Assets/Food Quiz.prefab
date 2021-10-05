@@ -66,6 +66,7 @@ MonoBehaviour:
   _correctChoiceDialogue: {fileID: 0}
   _incorrectChoicedialogue: {fileID: 0}
   _correctFood: {fileID: 0}
+  _runtimeData: {fileID: 11400000, guid: dd50269eeff359143a445335b04c6af0, type: 2}
 --- !u!1001 &3795834368806922008
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -48,6 +48,10 @@ public class DialogueManager : MonoBehaviour
     void OnDialogFinished(object sender, EventArgs args){
             GetComponent<Canvas>().enabled = false;
             _runtimeData.CurrentGameplayState = GameplayState.FreeWalk;
+            if(Player._health <= 0){
+                _runtimeData.CurrentGameplayState = GameplayState.InDialog;
+                Cursor.lockState = CursorLockMode.None;
+            }
     }
 
     void ShowSlide(){

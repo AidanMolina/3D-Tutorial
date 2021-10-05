@@ -13,10 +13,13 @@ public class Player : MonoBehaviour
     float _currentTilt = 0f;
 
     [SerializeField] float _moveSpeed = 3f;
+
+    public static int _health;
     // Start is called before the first frame update
     void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
+        _health = 2;
     }
 
     // Update is called once per frame
@@ -47,4 +50,6 @@ public class Player : MonoBehaviour
 
         GetComponent<CharacterController>().Move(movementVector * _moveSpeed * Time.deltaTime);
     }
+
+    
 }

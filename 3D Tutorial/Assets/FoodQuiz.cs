@@ -10,6 +10,7 @@ public class FoodQuiz : MonoBehaviour
     [SerializeField] Dialogue _incorrectChoicedialogue;
 
     [SerializeField] GameObject _correctFood;
+    [SerializeField] RuntimeData _runtimeData;
     
     // Start is called before the first frame update
     void Start()
@@ -32,9 +33,14 @@ public class FoodQuiz : MonoBehaviour
 
         if(food == _correctFood){
             GameEvents.InvokeDialogInitiated(_correctChoiceDialogue);
+            Player._health += 1;
+            if(Player._health > 3){
+                Player._health = 3;
+            }
         }
         else{
             GameEvents.InvokeDialogInitiated(_incorrectChoicedialogue);
+            Player._health -= 1;
         }
         
         Destroy(food);
