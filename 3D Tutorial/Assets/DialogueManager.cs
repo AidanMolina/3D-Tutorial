@@ -44,6 +44,7 @@ public class DialogueManager : MonoBehaviour
         LoadAvatar();
         GetComponent<Canvas>().enabled = true;
         _runtimeData.CurrentGameplayState = GameplayState.InDialog;
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
     void OnDialogFinished(object sender, EventArgs args){

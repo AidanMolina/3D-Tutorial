@@ -39,18 +39,19 @@ public class QuizChecker : MonoBehaviour
             _quiz3._done = false;
         }
 
-        if(count == _childCount){
+        if(count == 3){
             if(SceneManager.GetActiveScene().name == "SampleScene"){
                 _canvas.transform.Find("NextLevelButton").gameObject.SetActive(true);
                 _runtimeData.CurrentGameplayState = GameplayState.InDialog;
                 Cursor.lockState = CursorLockMode.None;
             }
-            if(SceneManager.GetActiveScene().name == "SceneTwo"){
-                _canvas.transform.Find("You Win").gameObject.SetActive(true);
-                _canvas.transform.Find("ExitButton").gameObject.SetActive(true);
-                _runtimeData.CurrentGameplayState = GameplayState.InDialog;
-                Cursor.lockState = CursorLockMode.None;
-            }
+            count++;
+        }
+        if(count == 7){
+            _canvas.transform.Find("You Win").gameObject.SetActive(true);
+            _canvas.transform.Find("ExitButton").gameObject.SetActive(true);
+            _runtimeData.CurrentGameplayState = GameplayState.InDialog;
+            Cursor.lockState = CursorLockMode.None;
         }
     }
 }
